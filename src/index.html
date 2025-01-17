@@ -3,12 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
+      rel="stylesheet">
+
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
+
+    <header class="header">
+      <img class="header__logo" src="./assets/images/desktop/logo.svg" alt>
+      <img id="header__hamburger" class="header__hamburger"
+        src="./assets/images/mobile/icon-hamburger.svg" alt>
+
+      <nav>
+        <ul id="menu" class="menu">
+          <li class="menu__item menu__item--first">
+            <a href class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href class="menu__link">Service</a>
+          </li>
+          <li class="menu__item">
+            <a href class="menu__link">Projects</a>
+          </li>
+          <li class="menu__item">
+            <button
+              class="text-button menu__link menu__link--button text-schedule "><a
+                href>Schedule a
+                Call</a></button>
+
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          srcset="./assets/images/mobile/image-hero.jpg"
+          media="(max-width: 640px)" />
+        <source
+          srcset="./assets/images/tablet/image-hero.jpg"
+          media="(max-width: 1440px)" />
+        <img class="branding__img"
+          src="./assets/images/desktop/image-hero.jpg" alt />
+      </picture>
+
+      <div class="branding">
+        <h2 class="branding__title text-big">Branding &
+          website design agency</h2>
+        <p class="branding__p text-small">We specialize in visual storytelling
+          by creating
+          cohesive brand and
+          website design solutions for small businesses, giving lasting
+          impressions to audiences in a digital world.</p>
+        <button class="branding__button text-button">Learn More</button>
+
+      </div>
+
+      <div class="strategic">
+        <picture>
+          <source
+            srcset="./assets/images/mobile/image-strategic.jpg"
+            media="(max-width: 640px)" />
+          <source
+            srcset="./assets/images/tablet/image-strategic.jpg"
+            media="(max-width: 1440px)" />
+          <img class="strategic__img"
+            src="./assets/images/desktop/image-strategic.jpg" alt />
+        </picture>
+
+        <img class="strategic__symbol"
+          src="./assets/images/desktop/bg-pattern-wave-red.svg" alt>
+        <div class="strategic__box">
+          <h2 class="strategic__title text-medium">Design <span
+              class="strategic__title--span text-medium-white">is
+              strategic.</span></h2>
+          <p class="strategic__p text-small text-small-white">“A
+            well-crafted design strategy
+            consistently
+            produces desired
+            outcomes and brand awareness. We are firm believers that success
+            lies
+            in creative collaboration with our clients.”</p>
+          <span class="strategic__schedule text-schedule">Schedule a Call</span>
+        </div>
+
+      </div>
+
+      <div class="approach">
+        <h2 class="approach__title text-medium text-medium-white">Our approach
+          for creating a
+          winning
+          brand</h2>
+        <div class="approach__box">
+          <p class="approach__number text-number">01</p>
+          <p
+            class="approach__span text-small text-small-white text-small-white-extrabold">Brand
+            Strategy</p>
+          <p class="approach__p text-small text-small-white">Brand strategy is
+            critical for
+            long-term
+            success. Outshining competitors and capturing the target audience
+            are key.</p>
+        </div>
+
+        <div class="approach__box">
+          <p class="approach__number text-number">02</p>
+          <p
+            class="approach__span text-small text-small-white text-small-white-extrabold">Brand
+            Design</p>
+          <p class="approach__p text-small text-small-white">Keeping the brand
+            design unique and meaningful helps in communicating the brand’s
+            value effectively.</p>
+        </div>
+
+        <div class="approach__box">
+          <p class="approach__number text-number">03</p>
+          <p
+            class="approach__span text-small text-small-white text-small-white-extrabold">Web
+            Strategy</p>
+          <p class="approach__p text-small text-small-white">A beautifully
+            crafted website is the best tool for brand awareness, and ultimately
+            results in increased revenues.</p>
+        </div>
+      </div>
+
+      <div class="naming">
+        <div class="naming__imagebox">
+          <picture>
+            <source
+              srcset="./assets/images/mobile/image-slide-1.jpg"
+              media="(max-width: 640px)" />
+            <source
+              srcset="./assets/images/tablet/image-slide-1.jpg"
+              media="(max-width: 1440px)" />
+            <img id="naming__img" class="naming__img"
+              src="./assets/images/desktop/image-slide-1.jpg" alt />
+          </picture>
+        </div>
+
+        <div class="naming__box">
+          <span
+            class="text-small text-small-white text-small-white-extrabold">Lean
+            Product Roadmap</span>
+          <span class="text-small text-small-white">2019 Project</span>
+        </div>
+        <h2 class="text-medium text-medium-white naming__title">Brand naming &
+          guidelines</h2>
+        <div class="naming__arrow">
+          <img id="prev-arrow" class="naming__img-arrow"
+            src="./assets/images/desktop/icon-arrow-previous.svg" alt>
+          <img id="next-arrow" class="naming__img-arrow"
+            src="./assets/images/desktop/icon-arrow-next.svg" alt>
+
+        </div>
+      </div>
+
+      <div class="call">
+        <h2 class="call__title text-medium text-medium-black">Let's build
+          something great together.</h2>
+        <button class="branding__button text-button">Schedule a Call</button>
+      </div>
+
+    </main>
+
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 24px;
+  &__logo {
+    width: 161px;
+    height: 30px;
+  }
+
+  &__hamburger {
+    position: absolute;
+    right: 26px;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  width: 255px;
+  height: 300px;
+  color: black;
+  background-color: #191921;
+  text-align: center;
+
+  &--active {
+    display: block;
+  }
+
+  &__item {
+    padding: 12px;
+
+    &--first {
+      padding-top: 32px;
+    }
+  }
+
+  &__link {
+    font-family: 'Commissioner', serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+
+    &--button {
+      padding: 22px 44px;
+      background-color: #f94f4f;
+      border: none;
+      color: white;
+    }
+  }
+}

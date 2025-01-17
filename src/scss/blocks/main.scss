@@ -1,1 +1,124 @@
+@use '../mixins/pseudo.scss' as *;
 
+.branding {
+  padding-inline: 24px;
+
+  &__img {
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__p {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    padding: 25px 41px;
+    margin-bottom: 96px;
+    background-color: #f94f4f;
+    border: none;
+    color: white;
+  }
+}
+
+.strategic {
+  background-color: #191921;
+  padding-bottom: 72px;
+
+  &__img {
+    margin-bottom: 72px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__symbol {
+    width: 62px;
+    height: 28px;
+    position: relative;
+    top: -84px;
+    left: 24px;
+  }
+
+  &__box {
+    padding-inline: 24px;
+  }
+
+  &__schedule {
+    padding-block: 9px;
+    border-bottom: 1px solid #f94f4f;
+  }
+
+  &__p {
+    margin-bottom: 40px;
+  }
+}
+
+.approach {
+  background-color: #f94f4f;
+  padding: 96px 24px;
+
+  &__number {
+    position: relative;
+    bottom: -50px;
+  }
+
+  &__span {
+    margin-bottom: 15px;
+  }
+}
+
+.naming {
+  position: relative;
+  background-color: #191921;
+  isolation: isolate;
+  margin-bottom: 100px;
+
+  &__imagebox {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  }
+
+  &__img {
+    position: relative;
+    z-index: -1;
+    margin-bottom: 64px;
+
+    &-arrow {
+      width: 40px;
+      height: 40px;
+      margin-inline: 8px;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    bottom: 300px;
+    right: 32px;
+  }
+
+  &__title {
+    padding-inline: 24px;
+  }
+
+  &__arrow {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+  }
+}
+
+.call {
+  padding-inline: 24px;
+  &__title {
+    margin-bottom: 47px;
+  }
+}

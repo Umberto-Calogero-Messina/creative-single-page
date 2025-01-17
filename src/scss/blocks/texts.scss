@@ -1,1 +1,65 @@
+.text {
+  &-big {
+    font-family: 'Commissioner', serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+  }
 
+  &-medium {
+    font-family: 'Commissioner', serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #f94f4f;
+
+    &-white {
+      color: #fff;
+    }
+
+    &-black {
+      color: black;
+    }
+  }
+
+  &-small {
+    font-family: 'Commissioner', serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #000000;
+
+    &-white {
+      color: #fff;
+      &-extrabold {
+        font-weight: 800;
+      }
+    }
+  }
+
+  &-button {
+    font-family: 'Commissioner', serif;
+    font-weight: 800;
+    line-height: auto;
+    font-size: 18px;
+    color: white;
+  }
+
+  &-schedule {
+    font-family: 'Commissioner', serif;
+    font-weight: 800;
+    line-height: auto;
+    font-size: 15px;
+    color: #f94f4f;
+  }
+
+  &-number {
+    font-family: 'Commissioner', serif;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 88px;
+
+    color: rgba(255, 255, 255, 0.25);
+  }
+}
